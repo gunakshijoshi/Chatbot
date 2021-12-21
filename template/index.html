@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to Skolo bot</h1>
+      <h1>Welcome to Chatbot</h1>
       <br>
       <hr>
       <br>
@@ -59,7 +59,7 @@
                   question: $("#question").val()
               },
               success: function(result) {
-                $("#response").append("<br>Me: "+$("#question").val()+ "<br> Karabo: "+result.response);
+                $("#response").append("<br>Me: "+$("#question").val()+ "<br> Chatbot: "+result.response);
                 $("#question").val("")
               },
               error: function(result) {

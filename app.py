@@ -2,7 +2,7 @@ from flask import Flask, render_template, jsonify, request
 import processor
 
 
-app = Flask(__name__)
+app=Flask(__name__,template_folder='template')
 
 app.config['SECRET_KEY'] = 'enter-a-very-secretive-key-3479373'
 
@@ -26,4 +26,4 @@ def botResponse():
 
 
 if __name__ == '__main__':
-    app.run(port="8000",debug=True)
+    app.run(host="0.0.0.0",port="8000",debug=True)
